@@ -1,6 +1,14 @@
-num1 = input("Nhap so thu nhat: ")
-num2 = input("Nhap so thu hai: ")
+num1 = float(input("Nhap so thu nhat: "))
+operator = input("Nhap vao toan tu: ")
+num2 = float(input("Nhap so thu hai: "))
 
-sum = float(num1) + float(num2)
-
-print(sum)
+if operator == "+":
+    print(num1 + num2)
+elif operator == "-":
+    print(num1 - num2)
+elif operator == "*":
+    print(num1 * num2)
+elif operator == "/":
+    print(num1 / num2)
+else:
+    print("Toan tu khong hop le!!")
